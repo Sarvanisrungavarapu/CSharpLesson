@@ -1,0 +1,28 @@
+﻿@model NWindMVCApp.Models.OrderIdsViewModel
+
+<div>
+    <h4>OrderIds</h4>
+    <hr />
+    <form asp-asp-controller="Order" method="post" asp-action="Details">
+        <select asp-for="Id" asp-items="Model.OrderIdSelectedList">
+        </select>
+        <button type="submit">Details</button>
+    </form>
+</div>
+
+@* <div>
+    <h4>OrderIdsViewModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div> *@
